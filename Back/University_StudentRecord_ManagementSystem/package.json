@@ -1,0 +1,26 @@
+{
+  "name": "university_studentrecord_managementsystem",
+  "version": "1.0.0",
+  "description": "学籍管理系统",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "db:init": "sqlcmd -S localhost -U Y9000P -P 20234330419 -i \"D:\\Windows\\OS\\SQL\\Saves\\Task\\Course\\Database\\USM.sql\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "KinFos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
